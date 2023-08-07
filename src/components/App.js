@@ -24,7 +24,7 @@ export default function App() {
 
   const [movies, isLoading, error] = useMovies(query, handleCloseMovie);
 
-  const [watched, setWatched] = useLocalStorageState('watched');
+  const [watched, setWatched] = useLocalStorageState([], 'watched');
 
   const [selectedId, setSelectedId] = useState(null);
 
